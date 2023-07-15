@@ -1,2 +1,2 @@
-create database if not exists taskmon_ai_test;
-create database if not exists taskmon_ai_prod;
+create database if not exists teamtrees_test;
+create database if not exists teamtrees_prod;
