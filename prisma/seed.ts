@@ -5,7 +5,7 @@ async function main() {
   await prisma.donation.deleteMany()
   const hiro = await prisma.donation.create({
     data: {
-      email: 'hiroe@teamtrees.nas',
+      email: 'hiro@teamtrees.nas',
       displayName: 'hiro',
       count: 5,
     },
