@@ -3,15 +3,15 @@ const prisma = new PrismaClient();
 
 async function main() {
   await prisma.donation.deleteMany();
-  const alice = await prisma.donation.create({
+  const hiro = await prisma.donation.create({
     data: {
-      email: 'alisce@prisma.io',
-      displayName: 'Alice',
+      email: 'hiroe@teamtrees.nas',
+      displayName: 'hiro',
       count: 5,
     },
   });
 
-  console.log({ alice });
+  console.log({ hiro });
 }
 
 main()
