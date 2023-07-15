@@ -16,3 +16,16 @@ generator nestgraphql {
 }
 
 // checkout https://www.prisma.io/docs/guides/other/multi-schema
+
+model Donation {
+  id          Int      @id @default(sequence(minValue: 1))
+  count       Int
+  createdAt   DateTime @default(now())
+  /// @Validator.MinLength(3)
+  displayName String
+  /// @Validator.IsEmail()
+  email       String
+  mobile      String?
+  message     String?
+  team        String?
+}
