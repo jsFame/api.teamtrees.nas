@@ -15,12 +15,4 @@ export class DonationsService {
   findOne(id: number) {
     return `This action returns a #${id} donation`
   }
-
-  update(id: number, updateDonationInput: UpdateDonationInput) {
-    return `This action updates a #${id} donation`
-  }
-
-  remove(id: number) {
-    return `This action removes a #${id} donation`
-  }
 }
