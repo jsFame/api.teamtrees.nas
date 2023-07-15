@@ -12,7 +12,7 @@
     "postinstall": "prisma migrate dev",
     "prebuild": "prisma generate",
     "build": "nest build",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"  \"prisma/**/*.ts\"",
     "dev": "concurrently \"pnpm:start:dev\" \"pnpm:gen-typings\" \"pnpm:prisma:generate\"",
     "gen-typings": "ts-node ./src/generate-typings",
     "start": "nest start",

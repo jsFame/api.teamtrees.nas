@@ -3,7 +3,7 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run start:dev",
   "outputDirectory": "dist",
-  "installCommand": "pnpm install" ,
+  "installCommand": "pnpm install",
   "builds": [
     {
       "src": "src/main.ts",
@@ -14,12 +14,7 @@
     {
       "src": "/(.*)",
       "dest": "src/main.ts",
-      "methods": [
-        "GET",
-        "POST",
-        "PUT",
-        "DELETE"
-      ]
+      "methods": ["GET", "POST", "PUT", "DELETE"]
     }
   ]
 }
