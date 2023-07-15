@@ -52,17 +52,20 @@
     "class-validator": "^0.14.0",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
-    "graphql": "^16.7.1",
-    "graphql-iso-date": "^3.6.1",
     "graphql-tools": "^9.0.0",
     "joi": "^17.9.2",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "prisma-nestjs-graphql": "^18.0.2",
+    "graphql": "^15.7.2",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-subscriptions": "^1.2.1",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.8.1"
+    "rxjs": "7.8.1",
+    "ts-morph": "^19.0.0"
   },
   "devDependencies": {
+    "rimraf": "^3.0.2",
     "@apollo/server-plugin-landing-page-graphql-playground": "^4.0.1",
     "@nestjs/cli": "^10.1.8",
     "@nestjs/schematics": "^10.0.1",
