@@ -6,6 +6,7 @@ import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core'
 import { GraphQLDateTime } from 'graphql-iso-date'
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo'
 import { ApolloServerPluginLandingPageGraphQLPlayground } from '@apollo/server-plugin-landing-page-graphql-playground'
+import { DonationsModule } from './donations/donations.module'
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { ApolloServerPluginLandingPageGraphQLPlayground } from '@apollo/server-p
         'subscriptions-transport-ws': true,
       },
     }),
+    DonationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
