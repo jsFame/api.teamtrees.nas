@@ -13,7 +13,7 @@ export class DonationsResolver {
   }
 
   @Query('donations')
-  findAll(@Args('orderBy') orderBy: object) {
+  findAll(@Args('orderBy') orderBy?: object) {
     //FIXME: OrderByParams
     console.debug({ findAll: orderBy })
     return this.donationsService.findAll(orderBy)
