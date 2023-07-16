@@ -8,9 +8,7 @@ export class DonationsService {
 
   create(createDonationInput: Prisma.DonationCreateInput) {
     return this.prisma.donation.create({
-      data: {
-        ...createDonationInput,
-      },
+      data: createDonationInput,
     })
   }
 
@@ -18,11 +16,9 @@ export class DonationsService {
     return this.prisma.donation.findMany()
   }
 
-  findOne(id: number) {
+  findOne(uniqueKey: Prisma.DonationWhereUniqueInput) {
     return this.prisma.donation.findUnique({
-      where: {
-        id,
-      },
+      where: uniqueKey,
     })
   }
 }
