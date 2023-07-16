@@ -2,7 +2,6 @@ import { Args, Mutation, Query, Resolver } from '@nestjs/graphql'
 import { DonationsService } from './donations.service'
 
 import { Prisma } from '@prisma/client'
-import { OrderByParams } from '../graphql'
 
 @Resolver('Donation')
 export class DonationsResolver {
@@ -14,7 +13,7 @@ export class DonationsResolver {
   }
 
   @Query('donations')
-  findAll(@Args('orderBy') orderBy: OrderByParams) {
+  findAll(@Args('orderBy') orderBy: object) {
     //FIXME: OrderByParams
     console.debug({ findAll: orderBy })
     return this.donationsService.findAll(orderBy)
