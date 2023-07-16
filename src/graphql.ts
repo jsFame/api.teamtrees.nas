@@ -1,3 +1,4 @@
+
 /*
  * -------------------------------------------------------
  * THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
@@ -49,12 +50,12 @@ export abstract class IMutation {
 }
 
 export class Result {
-  total: number
+  total number;
 }
 
 export abstract class ISubscription {
-  abstract totalUpdated(): Nullable<Result> | Promise<Nullable<Result>>
+  abstract totalUpdated(): Nullable<Result> | Promise<Nullable<Result>>;
 }
 
-export type DateTime = any
-type Nullable<T> = T | null
+export type DateTime = any;
+type Nullable<T> = T | null;
