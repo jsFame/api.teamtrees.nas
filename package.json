@@ -118,10 +118,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/learnery-engine/schedule-sessions-with-dean.git"
+    "url": "https://github.com/jsFame/api.teamtrees.nas.git"
   },
   "bugs": {
-    "url": "https://github.com/learnery-engine/schedule-sessions-with-dean/issues"
+    "url": "https://github.com/jsFame/api.teamtrees.nas/issues"
   },
-  "homepage": "https://github.com/learnery-engine/schedule-sessions-with-dean"
+  "homepage": "https://github.com/jsFame/api.teamtrees.nas"
 }
