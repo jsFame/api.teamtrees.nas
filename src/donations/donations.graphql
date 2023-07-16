@@ -18,7 +18,6 @@ input CreateDonationInput {
   mobile: String
   team: String
   message: String
-  createdAt: DateTime
 }
 
 input OrderByParams {

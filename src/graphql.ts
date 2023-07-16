@@ -1,3 +1,4 @@
+
 /*
  * -------------------------------------------------------
  * THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
@@ -5,7 +6,6 @@
  */
 
 /* tslint:disable */
-
 /* eslint-disable */
 
 export class CreateDonationInput {
@@ -15,7 +15,6 @@ export class CreateDonationInput {
   mobile?: Nullable<string>
   team?: Nullable<string>
   message?: Nullable<string>
-  createdAt?: Nullable<DateTime>
 }
 
 export class OrderByParams {
@@ -51,12 +50,12 @@ export abstract class IMutation {
 }
 
 export class Result {
-  total: number
+  total number;
 }
 
 export abstract class ISubscription {
-  abstract totalUpdated(): Nullable<Result> | Promise<Nullable<Result>>
+  abstract totalUpdated(): Nullable<Result> | Promise<Nullable<Result>>;
 }
 
-export type DateTime = any
-type Nullable<T> = T | null
+export type DateTime = any;
+type Nullable<T> = T | null;
