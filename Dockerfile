@@ -9,6 +9,7 @@ RUN pnpm install
 COPY . .
 
 RUN sed -i '/provider = "prisma-client-js"/a \ \ binaryTargets = ["native", "linux-musl-openssl-3.0.x"]' prisma/schema.prisma
+RUN npx prisma generate
 RUN pnpm run build
 
 # Deploy stage

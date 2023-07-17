@@ -64,6 +64,9 @@ jobs:
           sed 's/ /\n/g' .env.tmp > .env
           source .env
 
+      - name: Prisma Generate
+        run: prisma generate
+
       - name: Install dependencies
         run: pnpm install
 
