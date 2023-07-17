@@ -65,7 +65,7 @@ jobs:
           source .env
 
       - name: Prisma Generate
-        run: prisma generate
+        run: npx prisma generate
 
       - name: Install dependencies
         run: pnpm install
